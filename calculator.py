@@ -39,4 +39,3 @@ class Calculator(ctk.CTk):
 
 if __name__ == '__main__':
     Calculator(darkdetect.isDark())  
-      
