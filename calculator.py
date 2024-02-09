@@ -20,8 +20,8 @@ class Calculator(ctk.CTk):
         self.title_bar_color(is_dark)
         
         # Grid Layout
-        self.rowconfigure((0,1,2,3,4,5,6), weight = 1, uniform = 'a')
-        
+        self.rowconfigure(list(range(MAIN_ROWS)), weight = 1, uniform = 'a')
+        self.columnconfigure(list(range(MAIN_COLUMNS)), weight = 1, uniform = 'a')
         
         
         # Run
@@ -36,6 +36,9 @@ class Calculator(ctk.CTk):
         except:
             pass
 
+class OutputLabel(ctk.CTkLabel):
+    def __init__(self, parent):
+        super().__init__(master = parent, text = '123')
 
 if __name__ == '__main__':
     Calculator(darkdetect.isDark())  
