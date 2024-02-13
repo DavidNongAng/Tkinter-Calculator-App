@@ -1,5 +1,5 @@
 # Size 
-APP_SIZE = (400,700)
+APP_SIZE = (400,600)
 MAIN_ROWS = 7
 MAIN_COLUMNS = 4
 
@@ -27,17 +27,17 @@ NUM_POSITIONS = {
 }
 
 MATH_POSITIONS = {
-    '/': {'col': 3, 'row': 2, 'character': '', 'operator':'/', 'image path': {'light': 'images/divide_light.png'}},
-    '*': {'col': 3, 'row': 3, 'character': 'x', 'operator':'*', 'image path': None},
-    '-': {'col': 3, 'row': 4, 'character': '-', 'operator':'-', 'image path': None},
-    '=': {'col': 3, 'row': 6, 'character': '=', 'operator':'=', 'image path': None},
-    '+': {'col': 3, 'row': 5, 'character': '+', 'operator':'+', 'image path': None},
+    '/': {'col': 3, 'row': 2, 'character': '', 'image path': {'light': 'images/divide_light.png', 'dark': 'images/divide_dark.png'}},
+    '*': {'col': 3, 'row': 3, 'character': 'x', 'image path': None},
+    '-': {'col': 3, 'row': 4, 'character': '-', 'image path': None},
+    '=': {'col': 3, 'row': 6, 'character': '=', 'image path': None},
+    '+': {'col': 3, 'row': 5, 'character': '+', 'image path': None},
 }
 
 OPERATORS = {
     'clear': {'col': 0, 'row': 2, 'text': 'AC', 'image path': None},
-    'invert': {'col': 1, 'row': 2, 'text': '', 'image path': {'light': 'image/invert_light.png', 'dark': 'image/invert_dark.png'}},
-    'clear': {'col': 2, 'row': 2, 'text': '%', 'image path': None}
+    'invert': {'col': 1, 'row': 2, 'text': '', 'image path': {'light': 'images/invert_light.png', 'dark': 'images/invert_dark.png'}},
+    'percent': {'col': 2, 'row': 2, 'text': '%', 'image path': None}
 }
 
 COLORS = {
