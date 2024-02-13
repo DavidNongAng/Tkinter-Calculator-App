@@ -175,6 +175,7 @@ class Calculator(ctk.CTk):
             
             #Update Data and output
             self.display_nums = list(str(percent_number))
+            self.result_string.set(''.join(self.display_nums))
                  
     
     def invert(self):
